@@ -2,8 +2,8 @@ import {useState} from 'react'
 
 const useLocalStorage = (key, initialValue) => {
     const [storedValue, setStoredValue] = useState(() => {
-        const item = window.localStorage.getItem(key);
-        return item ? JSON.parse(item) : initialValue;
+        const darkMode = window.localStorage.getItem(key);
+        return darkMode ? JSON.parse(darkMode) : initialValue;
     });
     const setValue = value => {
         setStoredValue (value);
@@ -11,6 +11,5 @@ const useLocalStorage = (key, initialValue) => {
     }
     return [setValue, storedValue];
 }
-
 
 export default useLocalStorage;
