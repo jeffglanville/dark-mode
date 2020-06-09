@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Dropdown style={{ display: 'flex', justifyContent: 'center'}} />
+      <Dropdown />
       <Charts coinData={coinData} />
     </div>
   );

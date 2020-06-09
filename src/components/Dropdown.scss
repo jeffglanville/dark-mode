@@ -33,11 +33,14 @@ li:last-child {
 }
 
 li:hover {
-    background-color: #e5e5e5;
-    color: white;
+    background-color: dodgerblue;
+    color: gold;
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 178px;
     height: 18px;
     background-color: #ff3232;
